@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://lab4-test/functions.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./Functions Demo_files/styles.css">
+  <link rel="icon" href="data:,">
+  <title>Functions Demo</title>
+</head>
+<body class="functions">
+  <header class="site-header">
+    <h1>Functions Demo</h1>
+    <nav>
+      <ul class="nav">
+        <li><a class="" href="http://lab4-test/index.php">Home</a></li>
+        <li><a class="active" href="http://lab4-test/functions.php">Functions Demo</a></li>
+        <li><a class="" href="http://lab4-test/object.php">Object Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+<section class="flex">
+  <h2>Functions Demo</h2>
+  <article class="card">
+    <h3>Two Required + Two Defaulted</h3>
+    <p><strong>Call with defaults:</strong></p>
+    <pre>Item: Studio Monitors
+Qty: 2
+Discount: 0%
+Note: (no note)</pre>
+    <small>Since there are no parameter values for discount and note, they display their defaults.</small>
+    <p><strong>Call overriding defaults:</strong></p>
+    <pre>Item: Audio Interface
+Qty: 1
+Discount: 15%
+Note: Student discount</pre>
+    <small>Discount and note are overridden by parameter values.</small>
+  </article>
+
+  <article class="card">
+    <h3>Pass by Value vs Reference</h3>
+    <div class="columns">
+      <div>
+        <h3>Before</h3>
+        <pre>Array
+(
+    [volume] =&gt; 70
+    [balance] =&gt; 0
+    [bass] =&gt; -1
+    [treble] =&gt; 1
+)
+</pre>
+      </div>
+      <div>
+        <h3>After</h3>
+        <pre>Array
+(
+    [volume] =&gt; 70
+    [balance] =&gt; 0
+    [bass] =&gt; 1
+    [treble] =&gt; 4
+)
+</pre>
+      </div>
+    </div>
+    <p class="muted">
+      <code>volume</code>/<code>balance</code> unchanged (by value); 
+      <code>bass</code>/<code>treble</code> modified (by reference).
+    </p>
+  </article>
+</section>
+  </main>
+  <footer class="site-footer">
+    <small>© 2025 Trey Dolan - CTS3870C Lab 4</small>
+  </footer>
+
+
+</body></html>

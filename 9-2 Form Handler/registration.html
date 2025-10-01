@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+</head>
+<body>
+    <h1>Membership Form</h1>
+    <p>Thanks for choosing to join the Widget Club. To, register please fill in your details below and click send.</p>
+    <form action="process_registration.php" method="post">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+        <label for="password1">Choose a password</label>
+        <input type="password" name="password1" id="password1">
+        <label for="password2">Retype Password</label>
+        <input type="password" name="password2" id="password2">
+        <label for="genderMale">Are you male...</label>
+        <input type="radio" name="gender" id="genderMale" value="M">
+        <label for="genderFemale">...or female?</label>
+        <input type="radio" name="gender" id="genderFemale" value="F">
+        <label for="favoriteWidget">What's your favorite widget?</label>
+        <select name="favoriteWidget" id="favoriteWidget" size="1">
+            <option value="superWidget">The Superwidget</option>
+            <option value="megaWidget">The Megawidget</option>
+            <option value="wonderWidget">The Wonderwidget</option>
+        </select>
+        <label for="newsletter">Do you want to receive our newsletter?</label>
+        <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+        <label for="comments">Any Comments?</label>
+        <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+        <input type="submit" name="submitButton" id="submitButton" value="Send Details">
+        <input type="reset" name="resetButton" id="resetButton" value="Reset Form">
+    </form>
+</body>
+</html>
